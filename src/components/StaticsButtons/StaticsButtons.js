@@ -5,24 +5,51 @@ import { List } from './statics.styled';
 
 
 
-function StaticsButtons() {
+
+function StaticsButtons(props) {
+
+    const Click = event => {
+        
+
+        props.onClick(event.currentTarget.textContent)
+        
+    }
     return (
-        <section> <List>
+
+        
+
+    
+
+
+ 
+           
+            <List>
+                
+
+            <li><Button onClick={Click}>Good</Button></li>
+            <li><Button onClick={Click}>Neutral</Button></li>
+            <li><Button onClick={Click}>Bad</Button></li>
+            </List>
+
+           
             
-            <li><Button>Good</Button></li>
-            <li><Button>Neutral</Button></li>
-            <li><Button>Bad</Button></li>
             
         
             
          
-        </List>
+       
+
+
+        
+             
+ 
+           
         
         
-        </section>
-       
-       
-   
+        
+        
+        
+
 
 
 

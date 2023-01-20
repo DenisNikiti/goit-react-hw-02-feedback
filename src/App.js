@@ -1,5 +1,5 @@
 
- import Statics from "./components/Statics/Statics";
+import {Statics} from "./components/Statics/Statics"
 
 function App() {
   return (
@@ -7,8 +7,8 @@ function App() {
 
 
 
-       <Statics/>
-
+       
+ <Statics/>
   
 
 

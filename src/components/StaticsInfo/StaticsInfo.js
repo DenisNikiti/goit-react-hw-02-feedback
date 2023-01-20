@@ -1,37 +1,32 @@
 import PropTypes from 'prop-types';
 import { List } from '../StaticsInfo/StaticsInfo.styled';
- const state = {
-  good: 2,
-  neutral: 5,
-  bad: 3
-}
-
-function countTotalFeedback() {
- return state.good + state.neutral + state.bad
-
-}
-
-  function countPositiveFeedbackPercentage() {
-    return countTotalFeedback() / 100 * state.good *100
-  }
 
 
-function StaticsInfo() {
+
+
+
+
+
+
+  
+
+
+function StaticsInfo(props) {
     return (
 
-      <section>
+      
         <List>
         
-        <li><p>Good: {state.good}</p></li>
-        <li><p>Neutral: {state.neutral}</p></li>
-        <li><p>Bad: {state.bad}</p></li>
-        <li><p>Total: {countTotalFeedback()}</p></li>
-        <li><p>Positive feedback: {countPositiveFeedbackPercentage()}%</p></li>
+        <li><p>Good: {props.state.Good}</p></li>
+        <li><p>Neutral: {props.state.Neutral}</p></li>
+        <li><p>Bad: {props.state.Bad}</p></li>
+        <li><p>Total: {props.total}</p></li>
+        <li><p>Positive feedback: {props.total / 100 * props.state.Good}%</p></li>
       
       </List>
        
       
-      </section>
+      
      
       
 
